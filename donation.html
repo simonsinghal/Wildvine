@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Wildlife Charity Donation</title>
+</head>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: black;
+        font-size: 1.6rem;
+        line-height: 1.8;
+        overflow-x: hidden;
+        background-image: url('images/donation-bg.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    html {
+        font-family: var(--ff-roboto);
+        color: var(--granite-gray);
+        font-size: 10px;
+        scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar {
+        width: 13px;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.8s ease;
+    }
+
+    .container:hover {
+        transform: scale(1.05);
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    button {
+        background-color: #4caf50;
+        text-align: center;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .btn {
+        text-align: center;
+        justify-content: center;
+        margin-left: 150px;
+    }
+</style>
+
+<body>
+    <!-- <div class="image">
+        <img src="images/donation-bg.png">
+    </div> -->
+    <div class="container">
+        <h2 class="heading"><u>WILDLIFE CHARITY DONATION</u></h2>
+        <p class="text">Help us protect wildlife by making a donation.</p>
+
+        <form id="donationForm">
+            <label for="amount">Donation Amount ($):</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="button" class="btn" onclick="submitDonation()">Donate</button>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
